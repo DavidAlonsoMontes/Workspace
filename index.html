@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate JS</title>
+</head>
+<body>
+    Hola mundo
+    <script>
+        var libro={
+            titulo:'Las Legiones malditas',
+            autor:'Santiago Posterguillo',
+            informacion: function(){
+                return this.titulo + " escrito por "+
+                this.autor;
+            }
+        }
+        console.log( typeof libro.informacion());
+    </script>
+
+    <form>
+        <input type="text" value="12" id="campo">
+    </form>
+    <script>
+        console.log(document.getElementById("campo").value)
+    </script>
+    <script>
+        let x;
+       function calculo(x) { return (x)}
+       calculo(x)
+       console.log(calculo(x))
+       
+    </script>
+
+    <script>
+        let intentos = [1, 2, 3, 4]
+        console.log(intentos[4])
+    </script>
+    <script>
+        let numeros =[5,5,[3,4 ,[5,6]], 7]
+        console.log(numeros[2][2][1])
+    </script>
+</body>
+</html>
